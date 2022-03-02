@@ -128,6 +128,7 @@ namespace OOPforKids
         {
             Console.WriteLine("My name is " + name);
             Console.WriteLine($"I'm {height} cm and my salary {salary}");
+            Console.WriteLine($"My gender is {sugu}");
             Console.WriteLine("Good Bye");
         }// метод 2 
         public double Tulumaks()
