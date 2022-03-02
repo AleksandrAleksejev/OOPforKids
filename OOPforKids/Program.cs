@@ -16,7 +16,7 @@ namespace OOPforKids
                 inimesed[i].Eesnimi = Console.ReadLine();
                 Console.WriteLine("Age: ");
                 inimesed[i].Vanus = int.Parse(Console.ReadLine());
-                Console.WriteLine("What's your height?");
+                Console.WriteLine("What's your salary?");
                 inimesed[i].Height = int.Parse(Console.ReadLine());
                 Console.WriteLine("What's your salary?");
                 inimesed[i].Salary = int.Parse(Console.ReadLine());
@@ -36,8 +36,11 @@ namespace OOPforKids
             mees.Salary = 1600;
             Console.WriteLine($"{mees.Eesnimi} is {mees.Vanus},{mees.Height},{mees.Salary}");
             mees.Tervitame();
-            Person naine = new Person("Marina",Emakeel.saksa);
+            Person naine = new Person("Marina",Emakeel.saksa,Sugu.naine);
             naine.Tervitame();
+            naine.Palk = 1000;
+            double minutulu = naine.Tulumaks();
+            Console.WriteLine("Minu tulumaks on; " + minutulu);
 
 
 

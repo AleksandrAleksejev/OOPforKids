@@ -9,32 +9,52 @@ namespace OOPforKids
     public class Person
     {
         string eesnimi;//поля
-        string status;
         int vanus;
         int salary;// поля2
         string name;
         int height;
+        string status;
+        int palk;
+        Sugu sugu;
         Emakeel emakeel;
         public Person() { }//конструктор
-        public Person(string Eesnimi,Emakeel emakeel)
+        public Person(string Eesnimi,Emakeel emakeel,Sugu sugu)
         {
             eesnimi = Eesnimi;
-            this.emakeel = emakeel; 
+            this.emakeel = emakeel;
+            this.sugu = sugu;
         }
         public Emakeel Emakeel
         {
             get { return emakeel; }
         }
+        public Sugu Sugu
+        {
+            get { return sugu; }
+        }
         public string Eesnimi
         {
             set { if (eesnimi == null) eesnimi = value; }
             get { return eesnimi; }
-        }//св-во
+        }
+        //св-во
+        public int Palk
+        {
+            set { palk = value; }
+            get { return palk; }
+        }
         public int Vanus
         {
-            set 
+            set
             {
                 vanus = value;
+            }
+            get { return vanus; }
+        }
+        public string Status
+        {
+            get {
+                var status = "";
                 if (vanus < 7)
                 {
                     status = "vaike laps";
@@ -51,13 +71,7 @@ namespace OOPforKids
                 {
                     status = "senior";
                 }
-            }
-            get { return vanus; }
-        }
-        public string Status
-        {
-            set { status = value; }
-            get { return status; }
+                return status; }
         }
         public void Tervitame()//метод
         {
@@ -109,17 +123,19 @@ namespace OOPforKids
             }
             get { return salary; }
         }
-        //public void Hello()
-        //{
-        //    Console.WriteLine("My surname is "+ surname);
-        //    Console.WriteLine($"I'm {age} and I'm {status}");
-        //}
+
         public void Bye()
         {
             Console.WriteLine("My name is " + name);
             Console.WriteLine($"I'm {height} cm and my salary {salary}");
             Console.WriteLine("Good Bye");
         }// метод 2 
+        public double Tulumaks()
+        {
+            double tulu = 0;
+            tulu = palk * 0.2;
+            return tulu;
+        }
 
     }
 }
