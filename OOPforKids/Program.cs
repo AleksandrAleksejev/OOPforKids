@@ -6,6 +6,24 @@ namespace OOPforKids
     {
         static void Main(string[] args)
         {
+            Opilane o = new Opilane("Kati", "Kask", "TARpv21");
+            o.Hinne = 4;
+            o.Tervist();
+            Person naine = new Person();
+            naine.Palk = 100;
+            naine.Name = "Kask";
+
+
+
+
+
+
+
+
+
+
+
+            /*
             Person[] inimesed = new Person[3];
             for (int i = 0; i < 3; i++)
             {
@@ -26,23 +44,9 @@ namespace OOPforKids
                 inimene.Tervitame();
                 inimene.Bye();
             }
+            */
 
-
-            Person mees = new Person();
-            mees.Eesnimi = "Topolja";
-            mees.Vanus = 44;
-            mees.Name = "Timophei";
-            mees.Height = 180;
-            mees.Salary = 1600;
-            Console.WriteLine($"{mees.Eesnimi} is {mees.Vanus},{mees.Height},{mees.Salary}");
-            mees.Tervitame();
-            Person naine = new Person("Marina",Emakeel.saksa,Sugu.naine);
-            naine.Tervitame();
-            naine.Palk = 1000;
-            double minutulu = naine.Tulumaks();
-            Console.WriteLine("Minu tulumaks on; " + minutulu);
-
-
+           
 
             Console.ReadLine();
         }

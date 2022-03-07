@@ -18,11 +18,10 @@ namespace OOPforKids
         Sugu sugu;
         Emakeel emakeel;
         public Person() { }//конструктор
-        public Person(string Eesnimi,Emakeel emakeel,Sugu sugu)
+        public Person(string Eesnimi,string Name)
         {
             eesnimi = Eesnimi;
-            this.emakeel = emakeel;
-            this.sugu = sugu;
+            name = Name;
         }
         public Emakeel Emakeel
         {
@@ -46,9 +45,7 @@ namespace OOPforKids
         public int Vanus
         {
             set
-            {
-                vanus = value;
-            }
+            { vanus = value;}
             get { return vanus; }
         }
         public string Status
