@@ -18,10 +18,12 @@ namespace OOPforKids
         Sugu sugu;
         Emakeel emakeel;
         public Person() { }//конструктор
-        public Person(string Eesnimi,string Name)
+        public Person(string Eesnimi, string Name, int Vanus,string status)
         {
             eesnimi = Eesnimi;
             name = Name;
+            vanus = Vanus;
+            status = Status;
         }
         public Emakeel Emakeel
         {

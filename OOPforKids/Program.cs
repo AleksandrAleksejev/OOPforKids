@@ -6,7 +6,7 @@ namespace OOPforKids
     {
         static void Main(string[] args)
         {
-            Opilane o = new Opilane("Kati", "Kask", "TARpv21");
+            Opilane o = new Opilane("Kati", "Kask", "TARpv21", 15, "");
             o.Hinne = 4;
             o.Tervist();
             Person naine = new Person();

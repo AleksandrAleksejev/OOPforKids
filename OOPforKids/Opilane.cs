@@ -12,7 +12,7 @@ namespace OOPforKids
 
         public Opilane() { }
 
-        public Opilane(string Eesnimi,string Name,string Ruhm) : base(Eesnimi, Name)
+        public Opilane(string Eesnimi, string Name, string Ruhm, int Vanus, string Status) : base(Eesnimi, Name, Vanus, Status)
         {
             ruhm = Ruhm;
 
@@ -46,7 +46,7 @@ namespace OOPforKids
         public void Tervist()
         {
             string t = "";
-            Console.WriteLine("Tere! Minu nimi on {0}{1}", Eesnimi, Name);
+            Console.WriteLine("Tere! Minu nimi on {0}{1},Ma olen {2} aastat vana,Minu status on {3}", Eesnimi, Name,Vanus,Status);
             if (Toetus == true)
             {
                 t = "Saan toetust kitte:))";
